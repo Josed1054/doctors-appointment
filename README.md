@@ -1,36 +1,63 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Doctor Appointment Booking UI
 
-## Getting Started
+A fully responsive and accessible appointment booking UI for a healthcare platform.
 
-First, run the development server:
+## Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- **Doctor Directory View**
+  - Browse a list of doctors with details (name, photo, specialty, rating, location)
+  - Filter doctors by specialty
+  - Book appointments with a single click
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- **Booking Modal**
+  - Select from available time slots
+  - Confirm appointment booking
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- **Appointments Summary View**
+  - View all booked appointments
+  - Cancel appointments
+  - Empty state with guidance for new users
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Tech Stack
 
-## Learn More
+- **Framework**: Next.js (App Router)
+- **Language**: TypeScript
+- **Styling**: TailwindCSS
+- **UI Components**: Radix UI + shadcn/ui
+- **State Management**: React Context API + localStorage
+- **Accessibility**: ARIA attributes, keyboard navigation support, responsive design
 
-To learn more about Next.js, take a look at the following resources:
+## How AI Tools Were Used
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- **Cursor AI**: Used to scaffold component structure and implement component logic
+- **Mock Data**: Created realistic mock data for doctors and specialties
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Setup Instructions
 
-## Deploy on Vercel
+1. Clone the repository
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+3. Run the development server:
+   ```bash
+   npm run dev
+   ```
+4. Open [http://localhost:3000](http://localhost:3000) in your browser
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Accessibility Features
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- Fully keyboard navigable components
+- ARIA labels for interactive elements
+- Proper heading hierarchy
+- Screen reader friendly content
+- Responsive design for all device sizes
+
+## Known Limitations & Future Improvements
+
+- **Mock Data Only**: Currently uses static mock data with no backend
+- **Limited Filtering**: Only specialty filtering implemented, could add location
+- **No Authentication**: A real app would require user authentication
+- **Appointment Management**: Add features like rescheduling, reminders, and calendar integration
+- **Search Functionality**: Implement search for finding doctors by name or other criteria
+- **Doctor Profiles**: Detailed doctor profiles with reviews and more information
